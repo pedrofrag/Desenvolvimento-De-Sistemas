@@ -7,7 +7,24 @@
 </head>
 <body>
     <script>
-        
+        class Aluno {
+            nome;
+            nota1;
+            nota2;
+            constructor(nome, nota1, nota2) {
+                this.nome = nome;
+                this.nota1 = nota1;
+                this.nota2 = nota2;
+            }
+            calcularMedia(){
+                return(this.nota1 + this.nota2).toFixed(1)
+            }
+        }
+        let Aluno1 = new Aluno("Pedro", 9 , 8)
+        console.log(Aluno)
+        console.log(`As informações são:: ${Aluno1.calcularMedia()}`)
+
+
     </script>
     
 </body>

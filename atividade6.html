@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Empresa {
+            nome;
+            receitaAnual;
+            despesasAnuais;
+            constructor(nome, receitaAnual, despesasAnuais) {
+                this.nome = nome;
+                this.receitaAnual = receitaAnual;
+                this.despesasAnuais = despesasAnuais;
+            }
+            calcularLucroAnual() {
+                return(this.receitaAnual - this.despesasAnuais)
+            }
+        }
+
+        let Empresa1 = new Empresa("Paulao Centro Automotivo", 50000 , 20000)
+        console.log(Empresa)
+        console.log(`o filme é: ${Empresa1.calcularLucroAnual()}`)
+        console.log(Empresa1)
+    </script>
+    
+</body>
+</html>
