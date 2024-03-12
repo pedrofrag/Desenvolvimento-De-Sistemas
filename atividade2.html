@@ -7,6 +7,22 @@
 </head>
 <body>
     <script>
+        class Casa {
+            endereco;
+            numeroQuartos;
+            area;
+            constructor(endereco, numeroQuartos, area) {
+                this.endereco = endereco;
+                this.numeroQuartos = numeroQuartos;
+                this.area = area;
+            }
+            informacoesCasa(){
+                return((this.endereco + this.numeroQuartos + this.area))
+            }
+        }
+        let Casa1 = new Casa("Alameda dos Jerivás " , " 3 quartos " ,300)
+        console.log(Casa)
+        console.log(`As informações são:: ${Casa1.informacoesCasa()}`)
         
     </script>
 </body>
